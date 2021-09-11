@@ -1,4 +1,4 @@
-# Bonsafi
+# Bonsa-fi
 <img align="right" width="40%" src="bonsai.png">
 Bonsafi is a simple POSIX shell script inspired by the "Forest" app.
 
