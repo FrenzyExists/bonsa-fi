@@ -1,6 +1,8 @@
 #!/bin/sh
 LINK="https://www.youtube.com/watch?v=5qap5aO4i9A"
 TREES=0
+CURL_MODE=false
+QUIET=false
 trap ctrl_c INT
 function ctrl_c() {
     QUIET || notify-send "Trees grown: ${TREES}"
@@ -16,7 +18,7 @@ while getopts ":qhcl:" opt; do
         CURL_MODE=true;;
     h)
         cat << EOF
-Usage: [OPTIONS]
+Usage: bonsa-fi [OPTIONS]
 
 bonsa-fi is a simple POSIX script to help you concentrate
 
